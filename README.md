@@ -10,9 +10,11 @@ Usage: ./check_sr.py XenServer_IP username password sr_name warning_level critic
 
 nagios command defination:
 
+```
 define command {
    command_name check_xenserver_sr
    command_line $USER1$/check_sr.py $ARG1$ "$USER15$" "$USER16$" "$ARG2$" $ARG3$ $ARG4$
 }
+```
 
 USER16 and USER15 are username and password in resource.cfg 
